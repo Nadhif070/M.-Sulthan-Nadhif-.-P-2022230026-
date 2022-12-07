@@ -1,0 +1,73 @@
+program NOMOR_2;
+
+var a,b,c,d,e,f,g,V,satuan: integer;
+    Cp1,Cp2,Cp3,Cpt,Q: real;
+begin
+
+  writeln ();
+  writeln ('NOMOR 2');
+  writeln ();
+  
+  writeln ('a) Nilai Kapasitor Pengganti');
+  writeln ();
+  
+  writeln ('JAWAB');
+  
+  
+  writeln ();
+  
+  writeln ('Cp1 = 6 + 20');
+  a:= 6;
+  b:= 20;
+  
+  Cp1:= a+b;
+  
+ 
+  writeln ('| Cp1  =   ',Cp1:4:0,' μF');
+  writeln ();
+  
+  writeln ('Cp2 = (20x5)/(20+5)');
+  c:= 15;
+  d:= 5;
+  
+  Cp2:= (c*d)/(c+d);
+  
+ 
+  writeln ('| Cp2  =   ',Cp2:4:0,' μF');
+  writeln ();
+  
+  writeln ('Cp3 = 4+26');
+  e:= 4;
+  f:= 26;
+  
+  Cp3:= e+f;
+  
+ 
+  writeln ('| Cp3  =   ',Cp3:4:0,' μF');
+  writeln ();
+  
+  writeln ('Cp Total =  (30x60)/(30+60)');
+  
+  Cpt:= (Cp3*60)/(Cp3+60);
+  
+ 
+  writeln ('| Cp Total  =   ',Cpt:4:0,' μF');
+  writeln ();
+  
+  writeln ('b) Bila dialiri tegangan 15 volt maka, muatannya adalah');
+  writeln ();
+  
+  writeln (' • Q = C.V');
+  writeln ();
+  
+  writeln (' ( 20x10^-3 x 15 )');
+  writeln ();
+  
+  g:= 20;
+  satuan:= 1000;
+  V:= 15;
+  
+  Q:= g/satuan*V;
+  
+  writeln (' Q  =   ',Q:4:1,' C');
+end.
