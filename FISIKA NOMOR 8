@@ -1,0 +1,41 @@
+program NOMOR_8;
+
+var psatuan1,psatuan2,satuan,V: real;
+begin
+
+  writeln ();
+  writeln (' NOMOR 8');
+  writeln ();
+  
+  writeln (' Dik : C = 7500 pF');
+  writeln ('       Q = 16,5 x 10^-8 C');
+  
+  writeln ();
+  
+  writeln (' Berapa tegangan kedua ujung kapasitor ?');
+  writeln ();
+  
+  writeln (' JAWAB');
+  
+  
+  writeln ();
+  
+  writeln (' Q = C.V');
+  writeln (' V = Q/C');
+  
+  writeln ();
+  
+  writeln ('16,5.10^-8 / 7,5.10^-9');
+  
+  writeln ();
+ 
+  psatuan1:= 100000000;
+  psatuan2:= 1000000000;
+  
+  
+  V:= 16.5*psatuan1/7.5*psatuan2;
+  
+  writeln (' V  =   ',V:4:0,' Volt');
+  writeln (' V  -> 22 Volt');
+  
+ end.
