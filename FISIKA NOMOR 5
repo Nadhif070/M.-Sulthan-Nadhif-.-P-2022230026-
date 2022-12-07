@@ -1,0 +1,45 @@
+program NOMOR_5;
+
+var N,M,A,S: integer;
+    satuan1,satuan2,satuan3,L: real;
+begin
+
+  writeln ();
+  writeln (' NOMOR 5');
+  writeln ();
+  
+  writeln (' Diketahui Selenoid');
+  writeln ();
+  writeln ('  λ = 4 cm = 4.10^-2');
+  writeln ('  A = 0,5 cm² = 0,5 x 10^-4 m² -> 5.10^-5 m²');
+  writeln ('  N = 200 Lilitan');
+  writeln ();
+  
+  writeln (' a) induktasi diri selenoid dengan rongga udara :');
+  writeln ();
+  
+  writeln (' JAWAB');
+  
+  
+  writeln ();
+  
+  writeln (' L = N².μo.A / ℓ');
+  
+  writeln ();
+  writeln ('(200²).(4.π.10^-7).(5.10^-5) / 4.10^-2');
+  
+  writeln ();
+  N:= 200;
+  M:= 4;
+  A:= 5;
+  S:= 4;
+  satuan1:= 10000000;
+  satuan2:= 100000;
+  satuan3:= 100;
+  
+  L:= SQR(N) * (M/satuan1) * 3.14 * (A/satuan2) / (S/satuan3);
+  
+  writeln (' L  =   ',L:4:7,' H');
+  
+  
+ end.
