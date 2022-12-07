@@ -1,0 +1,88 @@
+program NOMOR_4;
+
+var V,I,satuan: integer;
+    hasil1,hasil2,hasil3,hasil4,hasil5,R,arus1: real;
+begin
+
+  writeln ();
+  writeln (' NOMOR 4');
+  writeln ();
+  
+  writeln (' Dik : V = 110 Volt');
+  writeln ('       I = 5,5 A');
+  writeln ();
+  
+  writeln (' Maka hambatannya adalah');
+  writeln ();
+  
+  writeln (' JAWAB');
+  
+  
+  writeln ();
+  
+  writeln (' R = V/I');
+  
+  writeln ();
+  
+  writeln (' R = 110/5,5');
+  
+  V:= 110;
+  I:= 55;
+  satuan:= 10;
+  
+  R:= V/(I/satuan);
+  
+ 
+  writeln (' | R =   ',R:4:0,' Ω');
+  writeln ();
+ 
+ 
+ writeln (' a) Jika V turun 10% ?');
+ writeln ();
+ 
+ writeln (' • 110 x 10/100');
+ hasil1:= V*(10/100);
+ 
+ writeln (' Hasilnya    =   ',hasil1:4:0,' Volt');
+ writeln ();
+ 
+ writeln (' • 110 -11');
+ hasil2:= V-hasil1;
+ 
+ writeln (' Hasilnya    =   ',hasil2:4:0,' Volt');
+ writeln ();
+ 
+ writeln (' Arus yang mengalir sekarang');
+ writeln ();
+ 
+ arus1:= hasil2/R;
+ 
+ writeln (' I    =   ',arus1:4:2,' A');
+ writeln ();
+ 
+ writeln (' b) Jika R turun 10% ?');
+ writeln ();
+ 
+ writeln (' • 20 x 10/100');
+ hasil3:= R*(10/100);
+ 
+ writeln (' Hasilnya    =   ',hasil3:4:0,' Volt');
+ writeln ();
+ 
+ writeln (' • 20-2');
+ hasil4:= R-hasil3;
+ 
+ writeln (' Hasilnya    =   ',hasil4:4:0,' Ω');
+ writeln ();
+ 
+ writeln (' Arus yang ditarik adalah');
+ writeln ();
+ 
+ writeln (' | I = V/R');
+ 
+ hasil5:= V/hasil4;
+ 
+ writeln (' I   =   ',hasil5:4:1,' A');
+ 
+ 
+end.
