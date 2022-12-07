@@ -1,0 +1,40 @@
+program NOMOR_3;
+
+var V,I,satuan: integer;
+    R: real;
+begin
+
+  writeln ();
+  writeln ('NOMOR 3');
+  writeln ();
+  
+  writeln (' Hambatan pada toaster');
+  writeln ();
+  
+  writeln (' Dik : V = 110 Volt');
+  writeln ('       I = 2,8 A');
+  writeln ();
+  
+  writeln ('JAWAB');
+  
+  
+  writeln ();
+  
+  writeln ('V = I.R');
+  writeln ('R = V/I');
+  
+  writeln ();
+  
+  writeln ('R = 110/2,8');
+  
+  V:= 110;
+  I:= 28;
+  satuan:= 10;
+  
+  R:= V/(I/satuan);
+  
+ 
+  writeln ('| R =   ',R:4:3,' Ω');
+  writeln ();
+ 
+end.
